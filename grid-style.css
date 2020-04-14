@@ -1,0 +1,228 @@
+/*--------------------------------------------------------------
+Basic responsive layout for all browsers:
+--------------------------------------------------------------*/
+.site {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+
+  /*--------------------------------------------------------------
+CSS Grid layout for modern browsers:
+--------------------------------------------------------------*/
+@supports (grid-area: auto) {
+    @media screen and (max-width: 609px) {
+
+        .site {
+            max-width: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        nav {
+            grid-column: 1/3;
+        }
+        header {
+            grid-column: 1/3;
+        }
+        #profile {
+            grid-column: 1/3;
+        }
+        #couple {
+            grid-column: 1/3;
+        }
+        #children {
+            grid-column: 1/3;
+        }
+        #portrait {
+            grid-column: 1/3;
+        }
+        #profile h2,
+        #profile p {
+            grid-column: 1/2;
+        }
+        #projects {
+            grid-column: 1/3;
+        }
+        #projects h2,
+        #projects p {
+            grid-column: 1/3;
+        }
+        #projects, img {
+            grid-column: 1/3;
+        }
+        #knowledge {
+            grid-column: 1/3;
+        }
+        #knowledge, img {
+            grid-column: 1/3;
+        }
+        #knowledge h2,
+        #knowledge p {
+            grid-column: 1/3;
+        }
+        #education {
+            grid-column: 1/3;
+        }
+        #education h2,
+        #education p {
+            grid-column: 1/3;
+        }
+        #education, img {
+            grid-column: 1/3;
+        }
+        #contact {
+            grid-column: 1/3;
+        }
+    }
+    @media screen and (min-width: 610px) {
+
+        .site {
+            max-width: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        nav {
+            grid-column: 1/3;
+        }
+        header {
+            grid-column: 1/3;
+        }
+        #profile {
+            grid-column: 1/3;
+            grid-row: 3/5;
+        }
+        #couple {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        #children {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        #portrait {
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+        #profile h2,
+        #profile p {
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+        #projects {
+            grid-column: 1/4;
+        }
+        #projects, h2 {
+            grid-column: 
+        }
+        #knowledge {
+            grid-column: 1/4;
+        }
+        #education {
+            grid-column: 1/4;
+        }
+        #contact {
+            grid-column: 1/4;
+        }
+    }
+    @media screen and (min-width: 914px) {
+
+        .site {
+            max-width: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        section {
+            display: grid;
+        }
+        nav {
+            grid-column: 1/4;
+        }
+        header {
+            grid-column: 1/4;
+        }
+        #profile {
+            grid-column: 1/4;
+            grid-row: 3/5;
+        }
+        #couple {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        #children {
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+        #portrait {
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+        #profile h2,
+        #profile p {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        #projects {
+            grid-column: 1/4;
+            grid-row: 5/7;
+        }
+        #vc {
+            grid-column: 1/2;
+            grid-row: 5/6;
+        }
+        #napp {
+            grid-column: 2/3;
+            grid-row: 6/7;
+        }
+        #biltmore {
+            grid-column: 3/4;
+            grid-row: 5/6;
+        }
+        #projects h2,
+        #projects p {
+            grid-column: 2/3;
+            grid-row: 5/6;
+        }
+        #knowledge {
+            grid-column: 1/4;
+            grid-row: 7/9;
+        }
+        #gitword {
+            grid-column: 1/2;
+            grid-row: 7/8;
+        }
+        #sqlphp {
+            grid-column: 2/3;
+            grid-row: 8/9;
+        }
+        #c35js {
+            grid-column: 3/4;
+            grid-row: 7/8;
+        }
+        #knowledge h2,
+        #knowledge p {
+            grid-column: 2/3;
+            grid-row: 7/8;
+        }
+        #education {
+            grid-column: 1/4;
+            grid-row: 9/11;
+        }        
+        #ptk {
+            grid-column: 1/2;
+            grid-row: 9/10;
+        }
+        #lpn {
+            grid-column: 2/3;
+            grid-row: 10/11;
+        }
+        #nths {
+            grid-column: 3/4;
+            grid-row: 9/10;
+        }
+        #education h2,
+        #education p {
+            grid-column: 2/3;
+            grid-row: 9/10;
+        }
+    }
+}
+

@@ -1,0 +1,145 @@
+/* Global Styles
+-------------------------------*/
+
+.topnav {
+  background: black;
+  /*width: 950px;*/
+  margin: 0 auto;
+  padding:65px 0;
+  display:inline-block;
+  text-align:center;
+  height:100px;
+}
+.topnav a {
+  display:block;
+  text-decoration:none;
+  color:white;
+}
+.topnav a:hover {
+  color:white;
+  background:#0bc9cd;
+}
+.topnav ul {
+  list-style-type:none;
+} 
+.topnav ul li {
+  float:left;
+  width:150px;
+  height:50px;
+  line-height:50px;
+  background:black;
+}
+.topnav ul ul li {
+  position:relative;
+  display:none;
+}
+.topnav ul li:hover ul li {
+  display:block;
+}
+.topnav ul ul ul {
+  display:none;
+}
+.topnav ul ul li:hover ul {
+  display:block;
+  position:absolute;
+  width:150px;
+  height:50px;
+  left:150px;
+  top:0;
+ }
+body {
+color: #343434;
+margin: 0;
+padding: 0;
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+line-height: 1.5;
+}
+a {
+  color: #08415c;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 100px;
+  line-height: 1;
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+}
+h2 {
+  font-size: 50px;
+  text-align: center;
+}
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  margin: 0;
+}
+p {
+  text-align: center;
+  align-self: center;
+}
+
+/* Profile
+-------------------------------*/
+header {
+  background: #832161;
+  border: solid #54153e;
+  color: #F7FFF7;
+  text-align: center;
+}
+#profile {
+  background: #0bc9cd;
+  border: solid #099396;
+}
+  
+
+/* Projects
+-------------------------------*/
+#projects {
+  background: #bcd2ee;
+  border: solid #abbfd9;
+}
+
+/* Knowledge
+-------------------------------*/
+ #knowledge {
+  background: #0bc9cd;
+  border: solid #099396;
+}
+
+
+/* Education
+-------------------------------*/
+#education {
+  background: #bcd2ee;
+  border: solid #abbfd9;
+}
+
+/* Contact Info
+-------------------------------*/
+
+#contact {
+  background: #7c77b9;
+  border: solid #444165;
+  color: #08415c;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .topnav {
+    background: black;
+    /*width: 950px;*/
+    margin: 0 auto;
+    padding:65px 0;
+    display:block;
+    text-align:center;
+    height:100px;
+  }
+  header {
+    text-align: left;
+  }
+}
+
+
