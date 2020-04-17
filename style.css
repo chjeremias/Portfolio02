@@ -3,12 +3,9 @@
 
 .topnav {
   background: black;
-  /*width: 950px;*/
   margin: 0 auto;
-  padding:65px 0;
   display:inline-block;
   text-align:center;
-  height:100px;
 }
 .topnav a {
   display:block;
@@ -47,6 +44,9 @@
   left:150px;
   top:0;
  }
+ .topnav label, #hamburger {
+  display: none;
+}
 body {
 color: #343434;
 margin: 0;
@@ -142,4 +142,53 @@ header {
   }
 }
 
+@media screen and (max-width: 599px) {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .topnav {
+    background: black;
+    margin: 0 auto;
+    display:inline-block;
+    text-align:left;
+    width: 100%;
+    position: sticky;
+  }
+  .topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+}
+.topnav ul li {
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.topnav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.topnav label {
+  display: inline-block;
+  color: #fff;
+  background: #099396;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 10px;
+}
+  .topnav ul li {
+    display: block;
+  }
+  .topnav ul li {
+    border-top: 1px solid #333;
+  }
+  .topnav ul {
+    display: none;
+  }
+  .topnav input:checked ~ ul {
+    display: block;
+  }
+}
 
